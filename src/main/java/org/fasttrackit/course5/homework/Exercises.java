@@ -39,6 +39,7 @@ public class Exercises {
         return countOfOddNumbers;
     }
 
+    //Exercise 3
     public static ArrayList<Integer> returnElementsGreaterThanTheNumber(int[] integers, int number) {
         ArrayList<Integer> returnedIntegers = new ArrayList<>();
         for (int integer : integers) {
@@ -101,7 +102,8 @@ public class Exercises {
 
     public static void printOneSentencePerLine(String phrase) {
         String[] arrayOfSentences = phrase.split("\\.");
-        for (String sentence : arrayOfSentences) {
+        String[] arrayOfSentences1 = phrase.split("[.]");
+        for (String sentence : arrayOfSentences1) {
             System.out.println(sentence.trim());
         }
     }
